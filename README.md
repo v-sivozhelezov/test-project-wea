@@ -1,8 +1,24 @@
-# React + Vite
+# Тестовое задание в рамках обучения в skypro.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Тестовое задание выполнено c помощью React + Vite .
 
-Currently, two official plugins are available:
+## Разработанный функционал
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Приложении позволяет просматривать погоду в выбранном городе.
+- Поиск города осуществляется при помощи открытого API https://geocoding-api.open-meteo.com/v1/search. Данное API возвращает географические координаты выбранного города.
+- Получение параметров погоды в выбранном городу осуществляется с помощью открытого API https://api.open-meteo.com/v1/forecast. Данное API возвращает данные о погоде в текущий момент времени и с прогнозом на 5 дней.
+- Базовая обработка ошибок (пустой запрос, отсутствие города в базе, ошибка сервера).
+- Адаптивный дизайн.
+
+## Технический стек:
+
+ReactJs;
+Vite;  
+Styled-components;
+
+## Установка и запуск проекта:
+
+Необходимо клонировать репозиторий: git repo clone v-sivozhelezov/test-project-weather;
+Установить зависимости: npm install;  
+Запустить приложение: npm run dev;  
+Открыть http://localhost:5173, чтобы просмотреть приложение.
